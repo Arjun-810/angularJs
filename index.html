@@ -1,0 +1,20 @@
+<html ng-app="myFirstApp">
+    <head>
+        <title>Angular js</title>
+        <script src="/angularjs/angular.min.js"></script>
+        <script src="/app.js"></script>
+    </head>
+    <body ng-controller="myFirstController">
+        <div class="container">
+            <div class="input-data">
+                <input class="input" placeholder="Enter dishes seprated by commas" ng-model="dishes">
+            </div>
+            <div class="check-btn">
+                <button class="btn btn-success" ng-click="checkLunch()">check If Too Much</button>
+            </div>
+            <div class="status">
+                <div class="message">{{message}}</div>
+            </div>
+          </div>
+    </body>
+</html>
